@@ -1,8 +1,8 @@
-import * as S from "@/styles/SolutionsDropdown.styles";
-import eadIcon from "@/assets/icons/ead.svg";
-import socialIcon from "@/assets/icons/social.svg";
-import gamificationIcon from "@/assets/icons/gamification.svg";
 import appIcon from "@/assets/icons/app.svg";
+import eadIcon from "@/assets/icons/ead.svg";
+import gamificationIcon from "@/assets/icons/gamification.svg";
+import socialIcon from "@/assets/icons/social.svg";
+import * as S from "@/styles/SolutionsDropdown.styles";
 import Image from "next/image";
 
 export default function SolutionsDropdown() {
