@@ -8,7 +8,7 @@ export const Navbar = styled.header`
   backdrop-filter: blur(15px);
   height: 5.5rem;
   position: fixed;
-  z-index: 9999;
+  z-index: 500;
   display: flex;
   align-items: center;
   width: 100%;
@@ -54,4 +54,31 @@ export const Navigation = styled.div`
   @media (max-width: 1400px) {
     display: none;
   }
+`;
+
+export const MobileNavigation = styled.div<{ $open: boolean }>`
+  display: ${(props) => (props.$open ? "block" : "none")};
+  position: fixed;
+  background: #5f41d9;
+  inset: 0 0 0 30%;
+  height: 100dvh;
+  z-index: 1000;
+`;
+
+export const MobileNavList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  font-size: 2rem;
+  margin: 0 2.5rem;
+  padding: 0;
+`;
+
+export const MobileSelect = styled.select`
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 `;

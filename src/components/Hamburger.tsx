@@ -1,19 +1,25 @@
 import hamburgerIcon from "@/assets/icons/hamburger.svg";
+import closeIcon from "@/assets/icons/icon-x.svg";
 import Image from "next/image";
-import { useState } from "react";
 import styled from "styled-components";
 
-export default function Hamburger() {
-  const [open, setOpen] = useState(false);
+interface HamburgerProps {
+  open: boolean;
+  onClick: () => void;
+}
 
+export default function Hamburger({ open, onClick }: HamburgerProps) {
   return (
-    <HamburgerMenu>
-      <Image src={hamburgerIcon} alt="Hamburger icon" />
+    <HamburgerMenu onClick={onClick}>
+      {!open && <Image src={hamburgerIcon} alt="Hamburger button" />}
+      {open && <Image src={closeIcon} alt="Close button" />}
     </HamburgerMenu>
   );
 }
 
 export const HamburgerMenu = styled.div`
+  z-index: 1001;
+
   &:hover {
     cursor: pointer;
   }
