@@ -1,7 +1,7 @@
-import { PropsWithChildren, useState } from "react";
-import * as S from "@/styles/shared/HoverLink.styles";
 import downIcon from "@/assets/icons/down.svg";
+import * as S from "@/styles/shared/HoverLink.styles";
 import Image from "next/image";
+import { PropsWithChildren, useState } from "react";
 
 interface HoverLinkProps extends PropsWithChildren {
   icon?: boolean;
