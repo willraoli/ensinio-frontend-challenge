@@ -20,9 +20,7 @@ export default function Navbar() {
           <Image src={logo} alt="Logo da página" />
         </Link>
         <S.Navigation>
-          <HoverLink icon showOnHover={<SolutionsDropdown />}>
-            Soluções
-          </HoverLink>
+          <HoverLink showOnHover={<SolutionsDropdown />}>Soluções</HoverLink>
           <S.NavLink href="/">Preços</S.NavLink>
           <S.NavLink href="/">Academy</S.NavLink>
           <S.NavLink href="/">Blog</S.NavLink>
@@ -34,9 +32,7 @@ export default function Navbar() {
           <LinkButton href="/" $variant="outlined">
             Começar agora
           </LinkButton>
-          <HoverLink icon showOnHover={<LocalizationDropdown />}>
-            PT
-          </HoverLink>
+          <HoverLink showOnHover={<LocalizationDropdown />}>PT</HoverLink>
         </S.Navigation>
         <S.MobileNavigation $open={open}>
           <S.MobileNavList>
