@@ -8,11 +8,16 @@ interface LinkButtonProps extends PropsWithChildren, LinkButtonVariantProps {
   href: string;
 }
 
-export default function LinkButton(props: LinkButtonProps) {
+export default function LinkButton({
+  children,
+  icon,
+  href,
+  $variant,
+}: LinkButtonProps) {
   return (
-    <S.LinkButton $variant={props.$variant} href={props.href}>
-      {props.icon && <Image src={props.icon} alt="Icon" />}
-      {props.children}
+    <S.LinkButton $variant={$variant} href={href}>
+      {icon && <Image src={icon} alt="Icon" />}
+      {children}
     </S.LinkButton>
   );
 }
