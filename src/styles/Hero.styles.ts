@@ -58,10 +58,6 @@ export const PlatformOverline = styled.div`
   line-height: 105%;
   letter-spacing: 0.15rem;
   color: #fff;
-
-  &::before {
-    content: url("./icons/music-audio-devices.svg");
-  }
 `;
 
 export const Heading = styled.div`
