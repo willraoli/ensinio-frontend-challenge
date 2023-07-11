@@ -51,7 +51,7 @@ export const DropdownMenu = styled.div`
   top: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background - color: #fff;
+  background-color: #fff;
   border-radius: 0.5rem;
   overflow: hidden;
 `;
